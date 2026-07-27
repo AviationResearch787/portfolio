@@ -15,6 +15,24 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  // ---- Mobile nav toggle ----
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  function closeNav() {
+    navToggle.setAttribute('aria-expanded', 'false');
+    navLinks.classList.remove('nav-open');
+  }
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('nav-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeNav);
+  });
+
   // ---- Hero typewriter ----
   const fullText = "Hi, I'm Kimberly.";
   const typedEl = document.getElementById('typed-text');
@@ -47,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---- Contact form -> mailto ----
   const form = document.getElementById('contact-form');
-  const formWrap = document.getElementById('contact-form-wrap');
   const thankYou = document.getElementById('thankyou-box');
 
   form.addEventListener('submit', (e) => {
@@ -63,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 — ${firstName} ${lastName} (${email})`);
     window.location.href = `mailto:pilot@uw.edu?subject=${subject}&body=${body}`;
 
-    formWrap.style.display = 'none';
+    form.style.display = 'none';
     thankYou.style.display = 'block';
   });
 
