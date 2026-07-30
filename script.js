@@ -45,20 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
       typedEl.textContent = fullText.slice(0, typedChars);
       if (typedChars >= fullText.length) {
         clearInterval(typeInterval);
-        setTimeout(startErasing, 1800);
       }
     }, 60);
-  }
-
-  function startErasing() {
-    typeInterval = setInterval(() => {
-      typedChars--;
-      typedEl.textContent = fullText.slice(0, typedChars);
-      if (typedChars <= 0) {
-        clearInterval(typeInterval);
-        setTimeout(startTyping, 500);
-      }
-    }, 35);
   }
 
   setTimeout(startTyping, 700);
