@@ -129,7 +129,7 @@
 .s77 { font-size: 17px; font-weight: 600; color: oklch(13% 0.02 250); margin-bottom: 12px; }
 .s78 { font-size: 15px; font-weight: 300; line-height: 1.72; color: oklch(38% 0.015 248); }
 .s79 { background: oklch(95.5% 0.015 250); border-radius: 5px; padding: 40px 48px; position: relative; }
-.s80 { height: 72px; width: auto; object-fit: contain; display: block; }
+.s80 { height: 104px; width: auto; object-fit: contain; display: block; }
 .s81 { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(33% 0.11 254); margin-bottom: 16px; }
 .s82 { font-size: 26px; font-weight: 400; letter-spacing: -0.02em; color: oklch(13% 0.02 250); margin-bottom: 16px; line-height: 1.25; }
 .s83 { font-size: 15px; font-weight: 300; line-height: 1.8; color: oklch(34% 0.015 248); margin-bottom: 20px; max-width: 780px; }
@@ -279,7 +279,7 @@
   .s36, .s71, .s88, .s98, .s104, .s134 { grid-template-columns: 220px 1fr; gap: 48px; }
   .s46 { grid-template-columns: repeat(2, 1fr); }
   .s79 { padding: 40px; }
-  .s80 { height: 64px; }
+  .s80 { height: 92px; }
   .s148 { gap: 64px; }
 }
 
@@ -308,7 +308,7 @@
   /* Research focus + DRG */
   .s75 { grid-template-columns: 1fr; }
   .s79 { padding: 32px 24px; }
-  .s80 { height: 56px; }
+  .s80 { height: 80px; }
   .s82 { font-size: 22px; }
   .s85 { gap: 16px; }
   .partner-logo-row { margin-top: 24px; padding-top: 20px; gap: 20px; }
