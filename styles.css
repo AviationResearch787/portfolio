@@ -97,6 +97,8 @@
 .s46 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 48px; }
 .s47 { background: white; padding: 40px 36px; border-radius: 5px; border-top: 3px solid oklch(33% 0.11 254); }
 .s48 { height: 32px; width: auto; object-fit: contain; margin-bottom: 20px; display: block; }
+img.logo-fsf { height: 42px; }
+img.logo-united { height: 50px; }
 .s49 { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: oklch(33% 0.11 254); margin-bottom: 16px; }
 .s50 { font-size: 19px; font-weight: 500; line-height: 1.3; color: oklch(13% 0.02 250); margin-bottom: 10px; }
 .s51 { font-size: 14px; color: oklch(48% 0.015 248); line-height: 1.5; }
@@ -181,8 +183,9 @@
 .s119 { font-size: 34px; font-weight: 300; line-height: 1.25; letter-spacing: -0.02em; color: oklch(13% 0.02 250); max-width: 480px; }
 .s120 { font-size: 14px; font-weight: 500; color: oklch(33% 0.11 254); text-decoration: none; white-space: nowrap; }
 .s120:hover { text-decoration: underline; }
-.s121 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-.s122 { background: white; border-radius: 5px; overflow: hidden; display: flex; flex-direction: column; position: relative; }
+#speaking { overflow-x: auto; }
+.s121 { display: grid; grid-template-columns: repeat(2, 600px); width: max-content; gap: 20px; }
+.s122 { background: white; border-radius: 5px; overflow: hidden; display: flex; flex-direction: column; position: relative; height: 480px; }
 .s123 { width: 100%; height: 280px; object-fit: cover; object-position: center top; display: block; }
 .s124 { padding: 28px 28px 32px; flex: 1; }
 .s125 { font-size: 16px; font-weight: 500; color: oklch(13% 0.02 250); line-height: 1.35; margin-bottom: 8px; }
@@ -190,7 +193,8 @@
 .s127 { width: 100%; height: 280px; object-fit: cover; object-position: center 20%; display: block; }
 .s128 { width: 100%; height: 280px; object-fit: cover; object-position: center; display: block; }
 .s129 { display: block; text-decoration: none; }
-.s130 { background: white; border-radius: 5px; overflow: hidden; display: flex; flex-direction: column; text-decoration: none; }
+.s130 { background: white; border-radius: 5px; overflow: hidden; display: flex; flex-direction: column; text-decoration: none; height: 480px; }
+img.card-screenshot { object-fit: contain; background: oklch(97% 0.005 247); }
 .s130:hover { opacity: 0.85; }
 .s131 { width: 100%; height: 280px; object-fit: cover; object-position: center top; display: block; }
 .s132 { width: 100%; height: 280px; object-fit: cover; object-position: center 30%; display: block; }
@@ -239,6 +243,7 @@
 .s167 { display: flex; gap: 32px; }
 .s168 { font-size: 13px; color: white; text-decoration: none; }
 .s168:hover { text-decoration: underline; }
+#publications { scroll-margin-top: 80px; }
 
 /* ============================================================
    RESPONSIVE
@@ -321,7 +326,6 @@
   /* Speaking & media */
   .s118 { flex-direction: column; align-items: flex-start; gap: 16px; }
   .s119, .s150 { font-size: 28px; }
-  .s121 { grid-template-columns: 1fr; }
 
   /* Speaking detail lists */
   .s137, .s140 { grid-template-columns: 1fr; gap: 4px; }
