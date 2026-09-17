@@ -104,15 +104,15 @@ img.logo-united { height: 50px; }
 .s51 { font-size: 14px; color: oklch(48% 0.015 248); line-height: 1.5; }
 .s52 { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
 .s53 { height: 32px; width: auto; object-fit: contain; display: block; }
-.s54 { display: grid; grid-template-columns: 1fr; }
-.s55 { padding: 28px 0 28px 40px; display: flex; gap: 18px; align-items: center; }
-.s56 { height: 32px; width: 56px; object-fit: contain; object-position: center; flex-shrink: 0; }
-.s57 { font-size: 15.5px; font-weight: 500; color: oklch(13% 0.02 250); margin-bottom: 3px; }
-.s58 { font-size: 13.5px; color: oklch(48% 0.015 248); }
-.s59 { padding: 28px 0 28px 40px; display: flex; gap: 18px; align-items: center; }
-.s60 { padding: 28px 0 28px 40px; display: flex; gap: 18px; align-items: center; }
-.s61 { padding: 28px 0 28px 40px; display: flex; gap: 18px; align-items: center; }
-.s62 { padding: 28px 0 28px 40px; display: flex; gap: 18px; align-items: center; }
+.s54 { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 32px; row-gap: 4px; }
+.s55 { padding: 18px 0; display: flex; gap: 14px; align-items: center; }
+.s56 { height: 28px; width: 48px; object-fit: contain; object-position: center; flex-shrink: 0; }
+.s57 { font-size: 15px; font-weight: 500; color: oklch(13% 0.02 250); margin-bottom: 3px; }
+.s58 { font-size: 13px; color: oklch(48% 0.015 248); }
+.s59 { padding: 18px 0; display: flex; gap: 14px; align-items: center; }
+.s60 { padding: 18px 0; display: flex; gap: 14px; align-items: center; }
+.s61 { padding: 18px 0; display: flex; gap: 14px; align-items: center; }
+.s62 { padding: 18px 0; display: flex; gap: 14px; align-items: center; }
 .s63 { background: white; padding: 32px 0; overflow: hidden; border-top: 1px solid oklch(92% 0.01 247); border-bottom: 1px solid oklch(92% 0.01 247); }
 .s64 { display: flex; animation: marquee 32s linear infinite; width: max-content; }
 .s65 { display: flex; gap: 80px; align-items: center; padding: 0 40px; flex-shrink: 0; }
@@ -283,6 +283,7 @@ img.card-screenshot { object-fit: contain; background: oklch(97% 0.005 247); }
   .s33 { top: 3px; left: 3px; right: 3px; bottom: 3px; }
   .s36, .s71, .s88, .s98, .s104, .s134 { grid-template-columns: 220px 1fr; gap: 48px; }
   .s46 { grid-template-columns: repeat(2, 1fr); }
+  .s54 { grid-template-columns: repeat(2, 1fr); }
   .s79 { padding: 40px; }
   .s80 { height: 64px; }
   .s148 { gap: 64px; }
@@ -308,7 +309,8 @@ img.card-screenshot { object-fit: contain; background: oklch(97% 0.005 247); }
 
   /* Recognition */
   .s46 { grid-template-columns: 1fr; }
-  .s55, .s59, .s60, .s61, .s62 { padding: 24px 0; }
+  .s54 { grid-template-columns: 1fr; }
+  .s55, .s59, .s60, .s61, .s62 { padding: 20px 0; }
 
   /* Research focus + DRG */
   .s75 { grid-template-columns: 1fr; }
