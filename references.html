@@ -15,13 +15,33 @@
   .ref-eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(33% 0.11 254); margin-bottom: 14px; }
   .ref-title { font-size: 30px; font-weight: 500; letter-spacing: -0.01em; color: oklch(13% 0.02 250); line-height: 1.25; margin-bottom: 12px; }
   .ref-sub { font-size: 15px; color: oklch(40% 0.015 248); line-height: 1.6; }
-  .ref-disclaimer { font-size: 14px; font-style: italic; color: oklch(38% 0.02 248); line-height: 1.6; background: oklch(96% 0.015 90); border-left: 3px solid oklch(75% 0.09 80); padding: 14px 18px; border-radius: 6px; margin-top: 14px; }
+  .ref-disclaimer { font-size: 14px; font-style: italic; color: oklch(38% 0.02 248); line-height: 1.6; background: oklch(96% 0.015 90); border-left: 3px solid oklch(75% 0.09 80); padding: 14px 18px; border-radius: 6px; margin: 14px 0 32px; }
   .ref-section { margin-bottom: 40px; }
   .ref-section h2 { font-size: 18px; font-weight: 500; color: oklch(13% 0.02 250); margin-bottom: 4px; }
   .ref-section .ref-section-note { font-size: 13px; color: oklch(48% 0.015 248); margin-bottom: 20px; }
   .ref-section-note .ref-footnote { font-style: italic; color: oklch(58% 0.015 248); }
   .ref-group-heading { font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: oklch(33% 0.11 254); margin: 32px 0 4px; }
   .ref-group-heading:first-of-type { margin-top: 8px; }
+  .ref-crm-group, .ref-mh-group { position: relative; }
+  .ref-margin-figures { display: none; }
+  @media (min-width: 1320px) {
+    .ref-margin-figures {
+      display: block;
+      position: absolute;
+      top: 4px;
+      right: 100%;
+      margin-right: 32px;
+      width: 240px;
+    }
+    .ref-margin-figures-mh { top: 33%; }
+    .ref-margin-figures img {
+      display: block;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 1px 2px oklch(13% 0.04 252 / 0.08), 0 8px 20px oklch(13% 0.04 252 / 0.12);
+    }
+    .ref-margin-figures img + img { margin-top: 16px; }
+  }
   .ref-more { background: oklch(96% 0.01 254); border-radius: 10px; padding: 28px 30px; }
   .ref-more h2 { font-size: 18px; font-weight: 500; color: oklch(13% 0.02 250); margin-bottom: 14px; }
   .ref-more p { font-size: 15px; line-height: 1.7; color: oklch(24% 0.018 248); }
@@ -49,58 +69,70 @@
   </div>
 
   <div class="ref-section">
-    <h2>References</h2>
-    <p class="ref-section-note">Listed in the order presented<sup>*</sup> <span class="ref-footnote">*I hope</span></p>
+    <h2>References Listed in the order presented<sup>*</sup></h2>
+    <p class="ref-section-note">*I hope</p>
     <p class="ref-disclaimer">Please note, I tried to list these in the order I presented them, but every talk gets remixed for its audience, so treat the sequence as a suggestion, not perfection. Everything I presented on stage is here, whether it's mine, my lab's, or someone else's brilliant work I name-dropped. Happy fact-checking and further reading!</p>
 
-    <h3 class="ref-group-heading">Psychological Safety &amp; Crew Resource Management</h3>
+    <div class="ref-crm-group">
+      <div class="ref-margin-figures">
+        <img src="assets/crm-captains-set-the-tone.png" alt="Chart: Captains set the tone — how tone influences safety communication (muted safety voice and safety silence by frequency of speaking up)">
+        <img src="assets/crm-getting-along-safety-voice.png" alt="Chart: How the perception of getting along impacts safety voice — pilots who strongly agree they can admit mistakes and ask for help, by whether they get along with the other pilot">
+      </div>
 
-    <div class="ref-item">
-      <span class="ref-year">2022</span>
-      <div>
-        <p class="ref-citation">Perkins, K., Ghosh, S., Vera, J., Aragon, C., &amp; Hyland, A. (2022). The persistence of safety silence: How flight deck microcultures influence the efficacy of crew resource management. <em>International Journal of Aviation, Aeronautics, and Aerospace, 9</em>(3).</p>
-        <a href="https://doi.org/10.15394/ijaaa.2022.1728" target="_blank" rel="noopener" class="ref-link">doi: 10.15394/ijaaa.2022.1728 →</a>
+      <h3 class="ref-group-heading">Psychological Safety &amp; Crew Resource Management</h3>
+
+      <div class="ref-item">
+        <span class="ref-year">2022</span>
+        <div>
+          <p class="ref-citation">Perkins, K., Ghosh, S., Vera, J., Aragon, C., &amp; Hyland, A. (2022). The persistence of safety silence: How flight deck microcultures influence the efficacy of crew resource management. <em>International Journal of Aviation, Aeronautics, and Aerospace, 9</em>(3).</p>
+          <a href="https://doi.org/10.15394/ijaaa.2022.1728" target="_blank" rel="noopener" class="ref-link">doi: 10.15394/ijaaa.2022.1728 →</a>
+        </div>
+      </div>
+
+      <div class="ref-item">
+        <span class="ref-year">2021</span>
+        <div>
+          <p class="ref-citation">Noort, M. C., Reader, T. W., &amp; Gillespie, A. (2021). Safety voice and safety listening during aviation accidents: Cockpit voice recordings reveal that speaking-up to power is not enough. <em>Safety Science, 139</em>, Article 105260.</p>
+          <a href="https://doi.org/10.1016/j.ssci.2021.105260" target="_blank" rel="noopener" class="ref-link">doi: 10.1016/j.ssci.2021.105260 →</a>
+        </div>
+      </div>
+
+      <div class="ref-item">
+        <span class="ref-year">1999</span>
+        <div>
+          <p class="ref-citation">Edmondson, A. (1999). Psychological safety and learning behavior in work teams. <em>Administrative Science Quarterly, 44</em>(2), 350–383.</p>
+          <a href="https://doi.org/10.2307/2666999" target="_blank" rel="noopener" class="ref-link">doi: 10.2307/2666999 →</a>
+        </div>
+      </div>
+
+      <div class="ref-item">
+        <span class="ref-year">2019</span>
+        <div>
+          <p class="ref-citation">Edmondson, A. (2019). The role of psychological safety. <em>Leader to Leader, 2019</em>(92), 13–19.</p>
+          <a href="https://doi.org/10.1002/ltl.20419" target="_blank" rel="noopener" class="ref-link">doi: 10.1002/ltl.20419 →</a>
+        </div>
+      </div>
+
+      <div class="ref-item">
+        <span class="ref-year">n.d.</span>
+        <div>
+          <p class="ref-citation">Google. (n.d.). <em>Understand team effectiveness</em>. re:Work.</p>
+          <a href="https://rework.withgoogle.com/intl/en/guides/understand-team-effectiveness" target="_blank" rel="noopener" class="ref-link">View online →</a>
+        </div>
       </div>
     </div>
 
-    <div class="ref-item">
-      <span class="ref-year">2021</span>
-      <div>
-        <p class="ref-citation">Noort, M. C., Reader, T. W., &amp; Gillespie, A. (2021). Safety voice and safety listening during aviation accidents: Cockpit voice recordings reveal that speaking-up to power is not enough. <em>Safety Science, 139</em>, Article 105260.</p>
-        <a href="https://doi.org/10.1016/j.ssci.2021.105260" target="_blank" rel="noopener" class="ref-link">doi: 10.1016/j.ssci.2021.105260 →</a>
+    <div class="ref-mh-group">
+      <div class="ref-margin-figures ref-margin-figures-mh">
+        <img src="assets/mh-perceptions-barriers.webp" alt="Chart: Perceptions and barriers to mental health support — 98% awareness, 47% unmet need, 12% support use, and 66% say psychological barriers outweigh structural barriers 2 to 1">
       </div>
-    </div>
 
-    <div class="ref-item">
-      <span class="ref-year">1999</span>
-      <div>
-        <p class="ref-citation">Edmondson, A. (1999). Psychological safety and learning behavior in work teams. <em>Administrative Science Quarterly, 44</em>(2), 350–383.</p>
-        <a href="https://doi.org/10.2307/2666999" target="_blank" rel="noopener" class="ref-link">doi: 10.2307/2666999 →</a>
-      </div>
-    </div>
+      <h3 class="ref-group-heading">Mental Health &amp; Emotional Intelligence</h3>
 
-    <div class="ref-item">
-      <span class="ref-year">2019</span>
-      <div>
-        <p class="ref-citation">Edmondson, A. (2019). The role of psychological safety. <em>Leader to Leader, 2019</em>(92), 13–19.</p>
-        <a href="https://doi.org/10.1002/ltl.20419" target="_blank" rel="noopener" class="ref-link">doi: 10.1002/ltl.20419 →</a>
-      </div>
-    </div>
-
-    <div class="ref-item">
-      <span class="ref-year">n.d.</span>
-      <div>
-        <p class="ref-citation">Google. (n.d.). <em>Understand team effectiveness</em>. re:Work.</p>
-        <a href="https://rework.withgoogle.com/intl/en/guides/understand-team-effectiveness" target="_blank" rel="noopener" class="ref-link">View online →</a>
-      </div>
-    </div>
-
-    <h3 class="ref-group-heading">Mental Health &amp; Emotional Intelligence</h3>
-
-    <div class="ref-item">
-      <span class="ref-year">2026</span>
-      <div>
-        <p class="ref-citation">Perkins, K., Hoffman, W., &amp; Vlaskamp, D. M. L. (2026). Designing for the operational middle: A sociotechnical framework for integrating psychosocial risk into aviation human factors and safety management. In T. Ahram &amp; W. Karwowski (Eds.), <em>Human systems engineering and design (IHSED2026): Future trends and applications</em> (Vol. 237, pp. 92–104). AHFE International.</p>
+      <div class="ref-item">
+        <span class="ref-year">2026</span>
+        <div>
+          <p class="ref-citation">Perkins, K., Hoffman, W., &amp; Vlaskamp, D. M. L. (2026). Designing for the operational middle: A sociotechnical framework for integrating psychosocial risk into aviation human factors and safety management. In T. Ahram &amp; W. Karwowski (Eds.), <em>Human systems engineering and design (IHSED2026): Future trends and applications</em> (Vol. 237, pp. 92–104). AHFE International.</p>
         <a href="https://doi.org/10.54941/ahfe1008149" target="_blank" rel="noopener" class="ref-link">doi: 10.54941/ahfe1008149 →</a>
       </div>
     </div>
@@ -166,6 +198,7 @@
         <p class="ref-citation">Dugger, Z., Petrides, K. V., Carnegie, N., &amp; Cormier, D. (2022). Trait emotional intelligence in American pilots. <em>Scientific Reports, 12</em>, Article 15033.</p>
         <a href="https://doi.org/10.1038/s41598-022-18868-4" target="_blank" rel="noopener" class="ref-link">doi: 10.1038/s41598-022-18868-4 →</a>
       </div>
+    </div>
     </div>
 
     <h3 class="ref-group-heading">Training</h3>
