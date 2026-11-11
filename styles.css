@@ -115,7 +115,7 @@ img.logo-faccc { height: 42px; max-width: 100%; }
 .s61 { padding: 18px 0; display: flex; gap: 14px; align-items: center; }
 .s62 { padding: 18px 0; display: flex; gap: 14px; align-items: center; }
 .s63 { background: white; padding: 32px 0; overflow: hidden; border-top: 1px solid oklch(92% 0.01 247); border-bottom: 1px solid oklch(92% 0.01 247); }
-.s64 { display: flex; animation: marquee 32s linear infinite; width: max-content; }
+.s64 { display: flex; animation: marquee 36s linear infinite; width: max-content; }
 .s65 { display: flex; gap: 80px; align-items: center; padding: 0 40px; flex-shrink: 0; }
 .s66 { height: 56px; width: auto; object-fit: contain; }
 .s67 { height: 36px; width: auto; object-fit: contain; }
