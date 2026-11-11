@@ -94,17 +94,17 @@
 .s43 { background: oklch(95.5% 0.015 250); padding: 64px 48px; }
 .s44 { max-width: 1240px; margin: 0 auto; }
 .s45 { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(33% 0.11 254); margin-bottom: 36px; }
-.s46 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 48px; }
-.s47 { background: white; padding: 36px 28px; border-radius: 5px; border-top: 3px solid oklch(33% 0.11 254); }
-.s48 { height: 32px; width: auto; object-fit: contain; margin-bottom: 20px; display: block; }
+.s46 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-bottom: 48px; }
+.s47 { background: white; padding: 28px 24px; border-radius: 5px; border-top: 3px solid oklch(33% 0.11 254); }
+.s48 { height: 32px; width: auto; max-width: 100%; object-fit: contain; object-position: left center; margin-bottom: 16px; display: block; }
 img.logo-fsf { height: 42px; }
 img.logo-united { height: 50px; }
 img.logo-faccc { height: 42px; max-width: 100%; }
 .s49 { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: oklch(33% 0.11 254); margin-bottom: 16px; }
 .s50 { font-size: 19px; font-weight: 500; line-height: 1.3; color: oklch(13% 0.02 250); margin-bottom: 10px; }
 .s51 { font-size: 14px; color: oklch(48% 0.015 248); line-height: 1.5; }
-.s52 { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
-.s53 { height: 32px; width: auto; object-fit: contain; display: block; }
+.s52 { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 16px; }
+.s53 { height: 32px; width: auto; max-width: 100%; object-fit: contain; display: block; }
 .s54 { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 32px; row-gap: 4px; }
 .s55 { padding: 18px 0; display: flex; gap: 14px; align-items: center; }
 .s56 { height: 28px; width: 48px; object-fit: contain; object-position: center; flex-shrink: 0; }
@@ -266,6 +266,11 @@ img.card-screenshot { object-fit: contain; background: oklch(97% 0.005 247); }
   .s13, .s14 { font-size: 44px; }
 }
 
+/* Award cards: 4 across down to 900px, then 2 */
+@media (max-width: 900px) {
+  .s46 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 /* ---- Tablet ---- */
 @media (max-width: 1024px) {
   .s1, .s7, .s35, .s43, .s70, .s86, .s112, .s147, .s164 { padding-left: 32px; padding-right: 32px; }
@@ -283,7 +288,6 @@ img.card-screenshot { object-fit: contain; background: oklch(97% 0.005 247); }
   .s32 { height: 220px; }
   .s33 { top: 3px; left: 3px; right: 3px; bottom: 3px; }
   .s36, .s71, .s88, .s98, .s104, .s134 { grid-template-columns: 220px 1fr; gap: 48px; }
-  .s46 { grid-template-columns: repeat(2, 1fr); }
   .s54 { grid-template-columns: repeat(2, 1fr); }
   .s79 { padding: 40px; }
   .s80 { height: 64px; }
