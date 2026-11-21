@@ -45,13 +45,6 @@
 .s5:hover { color: oklch(13% 0.02 250) }
 .s6 { font-size: 14px; font-weight: 500; color: oklch(33% 0.11 254); border: 1.5px solid oklch(33% 0.11 254); padding: 8px 20px; border-radius: 4px; text-decoration: none; transition: background 0.18s, color 0.18s; }
 .s6:hover { background: oklch(33% 0.11 254); color: white; }
-/* UW wordmark beside the menu, separated by a thin divider */
-.nav-right { display: flex; align-items: center; gap: 28px; }
-.nav-uw { display: flex; align-items: center; padding-right: 28px; border-right: 1px solid oklch(86% 0.01 247); order: 0; }
-.nav-uw picture { display: block; line-height: 0; }
-.nav-uw img { height: 15px; width: auto; display: block; }
-.nav-right .s4 { order: 1; }
-.nav-right .nav-toggle { order: 2; }
 .s7 { min-height: 100vh; display: flex; align-items: center; padding: 130px 48px 100px; }
 .s8 { max-width: 1240px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 420px; gap: 100px; align-items: center; }
 .s9 { font-size: 44px; font-weight: 300; line-height: 1.1; letter-spacing: -0.02em; color: oklch(13% 0.02 250); margin-bottom: 24px; margin-top: -8px; height: 54px; white-space: nowrap; }
@@ -289,9 +282,6 @@ img.card-screenshot { object-fit: contain; background: oklch(97% 0.005 247); }
 @media (max-width: 1024px) {
   .s1, .s7, .s35, .s43, .s70, .s86, .s112, .s147, .s164 { padding-left: 32px; padding-right: 32px; }
   .s4 { gap: 24px; }
-  .nav-right { gap: 24px; }
-  .nav-uw { padding-right: 24px; }
-  .nav-uw img { height: 13px; }
   .s5, .s6 { font-size: 13px; }
   /* Hero stays side-by-side with a smaller photo frame down to 641px */
   .s8 { grid-template-columns: 1fr 260px; gap: 32px; align-items: center; }
@@ -315,9 +305,6 @@ img.card-screenshot { object-fit: contain; background: oklch(97% 0.005 247); }
 @media (max-width: 768px) {
   /* Nav collapses into a dropdown panel triggered by the hamburger */
   .nav-toggle { display: flex; }
-  .nav-right { gap: 16px; }
-  .nav-uw { padding-right: 16px; }
-  .nav-uw img { height: 12px; }
   .s4 { position: fixed; top: 70px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; background: oklch(98% 0.006 247); box-shadow: 0 12px 24px oklch(13% 0.04 252 / 0.14); max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
   .s4.nav-open { max-height: 320px; }
   .s5, .s6 { width: 100%; padding: 16px 24px; border-bottom: 1px solid oklch(91% 0.01 247); font-size: 15px; }
@@ -388,7 +375,6 @@ img.card-screenshot { object-fit: contain; background: oklch(97% 0.005 247); }
 /* ---- Small mobile ---- */
 @media (max-width: 480px) {
   .s3 { font-size: 13px; }
-  .nav-uw img { height: 18px; }
   .s9 { font-size: 22px; }
   .s13, .s14 { font-size: 26px; }
   .s28 { max-width: 240px; }
